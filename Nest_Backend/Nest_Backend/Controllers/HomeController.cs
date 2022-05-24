@@ -23,7 +23,7 @@ namespace Nest_Backend.Controllers
             {
                 Sliders =await _context.Sliders.ToListAsync(),
                 Categories =await _context.Categories.ToListAsync(),
-                Products =await _context.Products.Include(p=>p.ProductImgs).Include(p=>p. Categories).Take(10).ToListAsync()
+                Products =await _context.Products.Include(p=>p.ProductImgs).Include(p=>p.Categories).Take(10).ToListAsync()
 
             };
             return View(homeVM);
