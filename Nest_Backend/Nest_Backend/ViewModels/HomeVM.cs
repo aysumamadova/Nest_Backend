@@ -11,5 +11,7 @@ namespace Nest_Backend.ViewModels
         public List<Slider>Sliders { get; set; }
         public List<Categories>Categories { get; set; }
         public List<Product>Products { get; set; }
+        public List<Product>Recently { get; set; }
+        public List<Product> TopRated { get; set; }
     }
 }
